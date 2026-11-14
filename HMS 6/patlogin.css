@@ -1,0 +1,118 @@
+#logo {
+    font-size: 36px;
+    color: rgb(37,99,235) ;
+    font-family: DM Sans,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 36px;
+    color: rgb(20,184,166) ;
+    font-family: DM Sans,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+    font-size: 26px;
+    color: rgb(20,184,166) ;
+    font-family: DM Sans,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666666;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.loginpage{
+    text-align: left;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+}
+#content {
+    width: 45%;
+    margin-bottom: 150px;
+}
+#form {
+    width: 500px;
+    max-width: 100%;
+    height: 620px;
+    margin-right: 250px;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+body {
+    min-height: 70vh;
+    min-width: 70vh;
+    background-color: #f7fafb;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.l1 {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: DM Sans,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:14px;
+    font-weight: 600;
+    color: rgb(37,99,235);
+    right: 120px;
+}
+::placeholder {
+    text-align: center;
+    color: #666666;
+    
+    margin-right:50px;
+}
+
+.box {
+    width: 350px;;
+    height:46px;
+    padding: 0 14px;
+    border-radius:5px;
+    border:1px solid #d7dddd;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.i1 {
+    position: relative;
+    width:15px;
+    height:15px;
+}
+
+.l2 {
+    font-size: 18px;
+    color: #666666;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 100px;
+}
+
+#pass {
+    text-decoration: none;
+    color: rgb(37,99,235);
+}
+
+.login {
+    width: 350px;
+    height: 46px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(20,184,166);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'DM Sans',system-ui,sans-serif;
+}
+.login:hover {
+    background-color: rgb(37,99,235) ;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Patient Registration | Hospital Queue Management System</title><link rel="stylesheet" href="account-register.css"></head>
+<body data-register-role="patient">
+<header class="topbar"><a class="brand" href="/">Hospital Queue Management System</a><a href="/">Home</a></header>
+<main class="wrap"><section class="form-card"><p class="eyebrow">PATIENT ACCOUNT</p><h1>Patient Registration</h1><p class="lead">Create your patient account to access your queue information and updates.</p>
+<form id="register-form"><div class="form-grid">
+<div class="field full"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Enter your full name" required></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+<div class="field"><label for="contact">Contact number</label><input id="contact" name="contact" type="tel" placeholder="Enter phone number"></div>
+<div class="field full"><label for="password">Password (minimum 8 characters)</label><input id="password" name="password" type="password" minlength="8" placeholder="Create a password" required></div>
+</div><button class="submit-btn" type="submit">Create Patient Account</button></form>
+<p class="form-foot">Already have an account? <a href="patlogin.html">Patient Login</a></p>
+<p class="form-foot">Registering as a doctor? <a href="doctor-register.html">Doctor Registration</a></p></section></main>
+<script src="auth.js"></script></body></html>

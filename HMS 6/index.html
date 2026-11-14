@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Queue Management System</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Hospital Queue Management System</a>
+    <nav>
+      <a href="patient-register.html">Patient Registration</a>
+      <a href="doctor-register.html">Doctor Registration</a>
+      <a class="nav-login" href="patlogin.html">Patient Login</a>
+      <a class="nav-login doctor-login" href="doct.html">Doctor Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SMARTER HOSPITAL EXPERIENCE</p>
+        <h1>Welcome to the Hospital Queue Management System</h1>
+        <p class="intro">Register, manage patient queues and keep track of appointments through one simple system.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#registration-options">Get Started</a>
+          <a class="secondary-btn" href="#how-it-works">How it works</a>
+        </div>
+      </div>
+      <div class="hero-image"><img src="Unknown.png" alt="Hospital queue management illustration"></div>
+    </section>
+
+    <section class="registration-section" id="registration-options">
+      <p class="eyebrow">GET STARTED</p>
+      <h2>Choose your registration</h2>
+      <p class="section-intro">Select the account type that matches your role.</p>
+      <div class="registration-cards">
+        <article class="registration-card patient-card">
+          <div class="card-mark">P</div>
+          <h3>Patient Registration</h3>
+          <p>Create a patient account to access your queue token, check your position and follow queue updates.</p>
+          <a class="card-btn" href="patient-register.html">Register as Patient</a>
+          <p class="existing">Already registered? <a href="patlogin.html">Patient Login</a></p>
+        </article>
+        <article class="registration-card doctor-card">
+          <div class="card-mark">D</div>
+          <h3>Doctor Registration</h3>
+          <p>Create a doctor account to access your assigned patient queue and update consultation status.</p>
+          <a class="card-btn" href="doctor-register.html">Register as Doctor</a>
+          <p class="existing">Already registered? <a href="doct.html">Doctor Login</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <h2>Simple queue management</h2>
+      <div class="feature-grid">
+        <div><h3>Register</h3><p>Create a patient or doctor account.</p></div>
+        <div><h3>Manage queue</h3><p>Doctors can view and update assigned patients.</p></div>
+        <div><h3>Stay informed</h3><p>Patients can check their queue status.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Hospital Queue Management System. All rights reserved.</footer>
+</body>
+</html>

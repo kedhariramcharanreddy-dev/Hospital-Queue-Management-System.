@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Dashboard | Hospital Queue</title><link rel="stylesheet" href="dashboard.css">
+</head>
+<body data-role="patient">
+<aside class="sidebar">
+  <div class="brand"><span>Hospital Queue Management System</span></div>
+  <nav><a class="active" href="patient-dashboard.html">▦ &nbsp; Overview</a><a href="#my-queue">◷ &nbsp; My Queue</a><a href="#notifications">♧ &nbsp; Notifications</a></nav>
+  <div class="side-bottom"><span class="avatar">P</span><span><b id="side-name">Patient</b><small>Patient account</small></span></div>
+</aside>
+<main class="main">
+  <header class="topbar"><div><p class="eyebrow">PATIENT PORTAL</p><h1>Good day, <span id="patient-name">Patient</span></h1><p class="muted">Track your appointment and queue status.</p></div><button class="outline" id="logout">Log out ↗</button></header>
+  <div class="notice" id="connection">Connecting to hospital queue…</div>
+  <section class="stats">
+    <article class="stat blue"><span>YOUR TOKEN</span><strong id="token">—</strong><small>Today's appointment</small></article>
+    <article class="stat mint"><span>QUEUE POSITION</span><strong id="position">—</strong><small>Patients ahead of you</small></article>
+    <article class="stat violet"><span>ESTIMATED WAIT</span><strong id="wait">—</strong><small>Approximate waiting time</small></article>
+  </section>
+  <section class="panel queue-panel" id="my-queue">
+    <div class="panel-head"><div><p class="eyebrow">LIVE UPDATE</p><h2>Your appointment</h2></div><span class="status" id="status">Loading</span></div>
+    <div class="appointment-grid"><div><small>Department / Doctor</small><b id="department">—</b></div><div><small>Appointment date</small><b id="date">—</b></div><div><small>Last updated</small><b id="updated">—</b></div></div>
+    <div class="progress"><span id="progress-bar"></span></div>
+    <p class="muted" id="queue-message">Your queue information will appear here when available.</p>
+    <button class="primary" id="refresh">Refresh queue status</button>
+  </section>
+  <section class="panel" id="notifications"><div class="panel-head"><div><p class="eyebrow">UPDATES</p><h2>Notifications</h2></div></div><div id="notification-list" class="empty">No new notifications.</div></section>
+  <p class="footer">If you need assistance, please contact the reception desk.</p>
+</main>
+<script src="patient-dashboard.js"></script>
+</body></html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Doctor Registration | Hospital Queue Management System</title><link rel="stylesheet" href="account-register.css"></head>
+<body data-register-role="doctor">
+<header class="topbar"><a class="brand" href="/">Hospital Queue Management System</a><a href="/">Home</a></header>
+<main class="wrap"><section class="form-card"><p class="eyebrow">DOCTOR ACCOUNT</p><h1>Doctor Registration</h1><p class="lead">Create a doctor account to access your assigned patient queue and manage consultation status.</p>
+<form id="register-form"><div class="form-grid">
+<div class="field full"><label for="name">Doctor name</label><input id="name" name="name" type="text" placeholder="Enter your full name" required></div>
+<div class="field"><label for="email">Professional email</label><input id="email" name="email" type="email" placeholder="doctor@example.com" required></div>
+<div class="field"><label for="contact">Contact number</label><input id="contact" name="contact" type="tel" placeholder="Enter phone number"></div>
+<div class="field full"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>General Medicine</option><option>Cardiology</option><option>Dermatology</option><option>ENT</option><option>Neurology</option><option>Orthopedics</option><option>Pediatrics</option><option>Gynecology</option><option>Ophthalmology</option><option>Dental</option></select></div>
+<div class="field full"><label for="password">Password (minimum 8 characters)</label><input id="password" name="password" type="password" minlength="8" placeholder="Create a password" required></div>
+</div><button class="submit-btn" type="submit">Create Doctor Account</button></form>
+<p class="form-foot">Already have an account? <a href="doct.html">Doctor Login</a></p>
+<p class="form-foot">Registering as a patient? <a href="patient-register.html">Patient Registration</a></p></section></main>
+<script src="auth.js"></script></body></html>

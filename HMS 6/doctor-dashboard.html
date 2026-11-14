@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Dashboard | Hospital Queue</title><link rel="stylesheet" href="dashboard.css">
+</head>
+<body data-role="doctor">
+<aside class="sidebar">
+  <div class="brand"><span>Hospital Queue Management System</span></div>
+  <nav><a class="active" href="doctor-dashboard.html">▦ &nbsp; Overview</a><a href="#generate-token">＋ &nbsp; Generate Token</a><a href="#patient-queue">☷ &nbsp; Patient Queue</a></nav>
+  <div class="side-bottom"><span class="avatar">D</span><span><b id="side-name">Doctor</b><small>Doctor account</small></span></div>
+</aside>
+<main class="main">
+  <header class="topbar"><div><p class="eyebrow">DOCTOR PORTAL</p><h1>Good day, <span id="doctor-name">Doctor</span></h1><p class="muted">Manage today's patient queue and consultation status.</p></div><button class="outline" id="logout">Log out ↗</button></header>
+  <div class="notice" id="connection">Connecting to patient queue…</div>
+  <section class="stats">
+    <article class="stat blue"><span>TOTAL IN QUEUE</span><strong id="total">—</strong><small>Patients assigned to you</small></article>
+    <article class="stat mint"><span>IN CONSULTATION</span><strong id="consulting">—</strong><small>Currently being attended</small></article>
+    <article class="stat violet"><span>COMPLETED TODAY</span><strong id="completed">—</strong><small>Consultations completed</small></article>
+  </section>
+  <section class="panel" id="generate-token">
+    <div class="panel-head"><div><p class="eyebrow">NEW QUEUE ENTRY</p><h2>Generate patient token</h2></div></div>
+    <p class="muted">Select a registered patient. The next available token for your queue will be generated automatically.</p>
+    <form id="token-form" class="token-form">
+      <div class="token-field">
+        <label for="patient-select">Registered patient</label>
+        <select id="patient-select" required><option value="">Loading patients…</option></select>
+      </div>
+      <button class="primary token-submit" id="generate-token-button" type="submit">Generate Token</button>
+    </form>
+    <p id="token-message" class="token-message" role="status">Choose a patient to create a queue token.</p>
+  </section>
+  <section class="panel" id="patient-queue">
+    <div class="panel-head"><div><p class="eyebrow">LIVE QUEUE</p><h2>Today's patients</h2></div><button class="outline" id="refresh">↻ Refresh</button></div>
+    <div class="table-wrap"><table><thead><tr><th>Token</th><th>Patient</th><th>Department</th><th>Status</th><th>Actions</th></tr></thead><tbody id="queue-body"><tr><td colspan="5" class="empty">Loading patients…</td></tr></tbody></table></div>
+    <p class="muted small">Use the action buttons to update each patient's queue status. Changes are sent to the server.</p>
+  </section>
+  <section class="panel"><div class="panel-head"><div><p class="eyebrow">QUICK GUIDE</p><h2>Queue actions</h2></div></div><div class="guide"><div><b>In Consultation</b><p>Mark the patient currently being seen.</p></div><div><b>Completed</b><p>Finish the consultation and move to the next patient.</p></div><div><b>Skip / Recall</b><p>Temporarily skip a patient or bring them back into the queue.</p></div></div></section>
+  <p class="footer">Patient information is confidential. Sign out when finished.</p>
+</main>
+<script src="doctor-dashboard.js"></script>
+</body></html>

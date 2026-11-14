@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Queue Management System: Doctor Login Page</title>
+    <link rel="stylesheet" href="doct.css">
+    
+<body data-login-role="doctor">
+    <div id="logo1">
+        <a href="doct.html" id="logo">Hospital Queue Management System</a>
+    </div>
+    <div id="div1">
+        <h1>Doctor Login</h1>
+        <p>Enter your credentials to access your dashboard</p>
+    
+    <form>
+        <label for="email" class="l1">Doctor Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your registered doctor email" required><br><br>
+
+        <label for="password"class="l1">Password</label><br>
+        <input type="password" id="password" placeholder="Enter password"required><br><br>
+
+        <input type="checkbox"class="box" id="remember">
+        <label for="remember"class="l2">Remember me</label>
+
+        <a href="" class="for1">Forgot Password?</a><br><br>
+
+        <input type="submit" class="login" value="Login">
+
+        <p>New doctor? <a href="doctor-register.html" id="register">Register here</a></p>
+    </form>    
+    </div>
+<script src="auth.js"></script></body>
+</html>
